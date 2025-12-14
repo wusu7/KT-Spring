@@ -19,5 +19,11 @@ pipeline {
         sh 'echo Test step'
       }
     }
+    stage('Fail Test') {
+  steps {
+    sh 'exit 1'
+  }
+}
+
   }
 }
